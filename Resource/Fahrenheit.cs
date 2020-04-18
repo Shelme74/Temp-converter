@@ -1,4 +1,6 @@
-﻿namespace Resource
+﻿using System;
+
+namespace Resource
 {
     public static class Fahrenheit
     {
