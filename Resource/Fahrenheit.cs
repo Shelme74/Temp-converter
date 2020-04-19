@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Resource
+﻿namespace Resource
 {
     public static class Fahrenheit
     {
