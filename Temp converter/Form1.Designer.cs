@@ -47,138 +47,41 @@ namespace Program
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.celTab = new System.Windows.Forms.TabPage();
-            this.CelToKel = new System.Windows.Forms.Label();
-            this.CeltoFah = new System.Windows.Forms.Label();
-            this.CelInput = new System.Windows.Forms.NumericUpDown();
-            this.fahTab = new System.Windows.Forms.TabPage();
-            this.FahToKel = new System.Windows.Forms.Label();
-            this.FahToCel = new System.Windows.Forms.Label();
-            this.FahInput = new System.Windows.Forms.NumericUpDown();
+            this.AboutTab = new System.Windows.Forms.TabPage();
             this.kelTab = new System.Windows.Forms.TabPage();
             this.KelToFah = new System.Windows.Forms.Label();
             this.KelToCel = new System.Windows.Forms.Label();
             this.KelInput = new System.Windows.Forms.NumericUpDown();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
-            this.celTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CelInput)).BeginInit();
-            this.fahTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FahInput)).BeginInit();
+            this.fahTab = new System.Windows.Forms.TabPage();
+            this.FahToKel = new System.Windows.Forms.Label();
+            this.FahToCel = new System.Windows.Forms.Label();
+            this.FahInput = new System.Windows.Forms.NumericUpDown();
+            this.celTab = new System.Windows.Forms.TabPage();
+            this.CelToKel = new System.Windows.Forms.Label();
+            this.CeltoFah = new System.Windows.Forms.Label();
+            this.CelInput = new System.Windows.Forms.NumericUpDown();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AboutTab.SuspendLayout();
             this.kelTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KelInput)).BeginInit();
+            this.fahTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FahInput)).BeginInit();
+            this.celTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CelInput)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // AboutTab
             // 
-            this.tabControl1.Controls.Add(this.celTab);
-            this.tabControl1.Controls.Add(this.fahTab);
-            this.tabControl1.Controls.Add(this.kelTab);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(280, 257);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // celTab
-            // 
-            this.celTab.Controls.Add(this.CelToKel);
-            this.celTab.Controls.Add(this.CeltoFah);
-            this.celTab.Controls.Add(this.CelInput);
-            this.celTab.Location = new System.Drawing.Point(4, 22);
-            this.celTab.Name = "celTab";
-            this.celTab.Padding = new System.Windows.Forms.Padding(3);
-            this.celTab.Size = new System.Drawing.Size(272, 231);
-            this.celTab.TabIndex = 0;
-            this.celTab.Text = "Celcius";
-            this.celTab.UseVisualStyleBackColor = true;
-            // 
-            // CelToKel
-            // 
-            this.CelToKel.AutoSize = true;
-            this.CelToKel.Location = new System.Drawing.Point(6, 43);
-            this.CelToKel.Name = "CelToKel";
-            this.CelToKel.Size = new System.Drawing.Size(50, 13);
-            this.CelToKel.TabIndex = 3;
-            this.CelToKel.Text = "273.15 K";
-            // 
-            // CeltoFah
-            // 
-            this.CeltoFah.AutoSize = true;
-            this.CeltoFah.Location = new System.Drawing.Point(6, 30);
-            this.CeltoFah.Name = "CeltoFah";
-            this.CeltoFah.Size = new System.Drawing.Size(37, 13);
-            this.CeltoFah.TabIndex = 2;
-            this.CeltoFah.Text = "32.0 F";
-            // 
-            // CelInput
-            // 
-            this.CelInput.Location = new System.Drawing.Point(7, 7);
-            this.CelInput.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.CelInput.Minimum = new decimal(new int[] {
-            200,
-            0,
-            0,
-            -2147483648});
-            this.CelInput.Name = "CelInput";
-            this.CelInput.Size = new System.Drawing.Size(100, 20);
-            this.CelInput.TabIndex = 1;
-            this.CelInput.TextChanged += new System.EventHandler(this.CelInput_ValueChanged);
-            // 
-            // fahTab
-            // 
-            this.fahTab.Controls.Add(this.FahToKel);
-            this.fahTab.Controls.Add(this.FahToCel);
-            this.fahTab.Controls.Add(this.FahInput);
-            this.fahTab.Location = new System.Drawing.Point(4, 22);
-            this.fahTab.Name = "fahTab";
-            this.fahTab.Padding = new System.Windows.Forms.Padding(3);
-            this.fahTab.Size = new System.Drawing.Size(272, 231);
-            this.fahTab.TabIndex = 1;
-            this.fahTab.Text = "Fahrenheit";
-            this.fahTab.UseVisualStyleBackColor = true;
-            // 
-            // FahToKel
-            // 
-            this.FahToKel.AutoSize = true;
-            this.FahToKel.Location = new System.Drawing.Point(6, 43);
-            this.FahToKel.Name = "FahToKel";
-            this.FahToKel.Size = new System.Drawing.Size(56, 13);
-            this.FahToKel.TabIndex = 3;
-            this.FahToKel.Text = "255.372 K";
-            // 
-            // FahToCel
-            // 
-            this.FahToCel.AutoSize = true;
-            this.FahToCel.Location = new System.Drawing.Point(6, 30);
-            this.FahToCel.Name = "FahToCel";
-            this.FahToCel.Size = new System.Drawing.Size(57, 13);
-            this.FahToCel.TabIndex = 2;
-            this.FahToCel.Text = "-17.778 °C";
-            // 
-            // FahInput
-            // 
-            this.FahInput.Location = new System.Drawing.Point(7, 7);
-            this.FahInput.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.FahInput.Minimum = new decimal(new int[] {
-            200,
-            0,
-            0,
-            -2147483648});
-            this.FahInput.Name = "FahInput";
-            this.FahInput.Size = new System.Drawing.Size(100, 20);
-            this.FahInput.TabIndex = 1;
-            this.FahInput.ValueChanged += new System.EventHandler(this.FahInput_ValueChanged);
+            this.AboutTab.Controls.Add(this.label1);
+            this.AboutTab.Location = new System.Drawing.Point(4, 22);
+            this.AboutTab.Name = "AboutTab";
+            this.AboutTab.Padding = new System.Windows.Forms.Padding(3);
+            this.AboutTab.Size = new System.Drawing.Size(272, 231);
+            this.AboutTab.TabIndex = 3;
+            this.AboutTab.Text = "About";
+            this.AboutTab.UseVisualStyleBackColor = true;
             // 
             // kelTab
             // 
@@ -229,19 +132,139 @@ namespace Program
             this.KelInput.TabIndex = 1;
             this.KelInput.ValueChanged += new System.EventHandler(this.KelInput_ValueChanged);
             // 
-            // tabPage1
+            // fahTab
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(272, 231);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.fahTab.Controls.Add(this.FahToKel);
+            this.fahTab.Controls.Add(this.FahToCel);
+            this.fahTab.Controls.Add(this.FahInput);
+            this.fahTab.Location = new System.Drawing.Point(4, 22);
+            this.fahTab.Name = "fahTab";
+            this.fahTab.Padding = new System.Windows.Forms.Padding(3);
+            this.fahTab.Size = new System.Drawing.Size(272, 231);
+            this.fahTab.TabIndex = 1;
+            this.fahTab.Text = "Fahrenheit";
+            this.fahTab.UseVisualStyleBackColor = true;
+            // 
+            // FahToKel
+            // 
+            this.FahToKel.AutoSize = true;
+            this.FahToKel.Location = new System.Drawing.Point(6, 43);
+            this.FahToKel.Name = "FahToKel";
+            this.FahToKel.Size = new System.Drawing.Size(56, 13);
+            this.FahToKel.TabIndex = 3;
+            this.FahToKel.Text = "255.372 K";
+            // 
+            // FahToCel
+            // 
+            this.FahToCel.AutoSize = true;
+            this.FahToCel.Location = new System.Drawing.Point(6, 30);
+            this.FahToCel.Name = "FahToCel";
+            this.FahToCel.Size = new System.Drawing.Size(57, 13);
+            this.FahToCel.TabIndex = 2;
+            this.FahToCel.Text = "-17.778 °C";
+            // 
+            // FahInput
+            // 
+            this.FahInput.Location = new System.Drawing.Point(7, 7);
+            this.FahInput.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.FahInput.Minimum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            -2147483648});
+            this.FahInput.Name = "FahInput";
+            this.FahInput.Size = new System.Drawing.Size(100, 20);
+            this.FahInput.TabIndex = 1;
+            this.FahInput.ValueChanged += new System.EventHandler(this.FahInput_ValueChanged);
+            // 
+            // celTab
+            // 
+            this.celTab.Controls.Add(this.CelToKel);
+            this.celTab.Controls.Add(this.CeltoFah);
+            this.celTab.Controls.Add(this.CelInput);
+            this.celTab.Location = new System.Drawing.Point(4, 22);
+            this.celTab.Name = "celTab";
+            this.celTab.Padding = new System.Windows.Forms.Padding(3);
+            this.celTab.Size = new System.Drawing.Size(272, 231);
+            this.celTab.TabIndex = 0;
+            this.celTab.Text = "Celcius";
+            this.celTab.UseVisualStyleBackColor = true;
+            // 
+            // CelToKel
+            // 
+            this.CelToKel.AutoSize = true;
+            this.CelToKel.Location = new System.Drawing.Point(6, 43);
+            this.CelToKel.Name = "CelToKel";
+            this.CelToKel.Size = new System.Drawing.Size(50, 13);
+            this.CelToKel.TabIndex = 3;
+            this.CelToKel.Text = "273.15 K";
+            // 
+            // CeltoFah
+            // 
+            this.CeltoFah.AutoSize = true;
+            this.CeltoFah.Location = new System.Drawing.Point(6, 30);
+            this.CeltoFah.Name = "CeltoFah";
+            this.CeltoFah.Size = new System.Drawing.Size(37, 13);
+            this.CeltoFah.TabIndex = 2;
+            this.CeltoFah.Text = "32.0 F";
+            // 
+            // CelInput
+            // 
+            this.CelInput.Location = new System.Drawing.Point(7, 7);
+            this.CelInput.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.CelInput.Minimum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            -2147483648});
+            this.CelInput.Name = "CelInput";
+            this.CelInput.Size = new System.Drawing.Size(100, 20);
+            this.CelInput.TabIndex = 1;
+            this.CelInput.TextChanged += new System.EventHandler(this.CelInput_ValueChanged);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.celTab);
+            this.tabControl1.Controls.Add(this.fahTab);
+            this.tabControl1.Controls.Add(this.kelTab);
+            this.tabControl1.Controls.Add(this.AboutTab);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(280, 257);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // AboutL1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 4);
+            this.label1.Name = "AboutL1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Copyright(C) 2020  Shelme74\n" +
+                "This program is free software: you can redistribute it\n" +
+                "and / or modify it under the terms of the GNU Affero\n" +
+                "General Public License as published by the Free\n" +
+                "Software Foundation, either version 3 of the License,\n" +
+                "or(at your option) any later version.\n" +
+                "This program is distributed in the hope that it will be\nuseful, " +
+                "but WITHOUT ANY WARRANTY; without\neven the implied warranty of " +
+                "MERCHANTABILITY or\nFITNESS FOR A PARTICULAR PURPOSE. See the\n" +
+                "GNU Affero General Public License for more details.\n" +
+                "You should have received a copy of the GNU Affero\nGeneral Public License " +
+                "along with this program.\nIf not, see < https://www.gnu.org/licenses/ >.";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+           this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(304, 281);
@@ -250,35 +273,38 @@ namespace Program
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Temperature converter";
-            this.tabControl1.ResumeLayout(false);
-            this.celTab.ResumeLayout(false);
-            this.celTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CelInput)).EndInit();
-            this.fahTab.ResumeLayout(false);
-            this.fahTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FahInput)).EndInit();
+            this.AboutTab.ResumeLayout(false);
+            this.AboutTab.PerformLayout();
             this.kelTab.ResumeLayout(false);
             this.kelTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KelInput)).EndInit();
+            this.fahTab.ResumeLayout(false);
+            this.fahTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FahInput)).EndInit();
+            this.celTab.ResumeLayout(false);
+            this.celTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CelInput)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage celTab;
-        private System.Windows.Forms.TabPage fahTab;
-        private System.Windows.Forms.TabPage kelTab;
-        private System.Windows.Forms.NumericUpDown CelInput;
-        private System.Windows.Forms.NumericUpDown FahInput;
-        private System.Windows.Forms.NumericUpDown KelInput;
-        private Label CeltoFah;
-        private Label CelToKel;
-        private Label FahToCel;
-        private Label FahToKel;
+        private TabPage AboutTab;
+        private TabPage kelTab;
         private Label KelToFah;
         private Label KelToCel;
-        private TabPage tabPage1;
+        private NumericUpDown KelInput;
+        private TabPage fahTab;
+        private Label FahToKel;
+        private Label FahToCel;
+        private NumericUpDown FahInput;
+        private TabPage celTab;
+        private Label CelToKel;
+        private Label CeltoFah;
+        private NumericUpDown CelInput;
+        private TabControl tabControl1;
+        private Label label1;
     }
 }
