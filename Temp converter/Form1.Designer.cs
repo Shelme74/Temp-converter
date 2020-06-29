@@ -1,4 +1,21 @@
-﻿using System.Windows.Forms;
+﻿/**
+ * Copyright(C) 2020  Shelme74
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or(at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.If not, see<https://www.gnu.org/licenses/>.
+ * 
+ */
+
+using System.Windows.Forms;
 
 namespace Program
 {
@@ -43,6 +60,7 @@ namespace Program
             this.KelToFah = new System.Windows.Forms.Label();
             this.KelToCel = new System.Windows.Forms.Label();
             this.KelInput = new System.Windows.Forms.NumericUpDown();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.celTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CelInput)).BeginInit();
@@ -57,6 +75,7 @@ namespace Program
             this.tabControl1.Controls.Add(this.celTab);
             this.tabControl1.Controls.Add(this.fahTab);
             this.tabControl1.Controls.Add(this.kelTab);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -81,7 +100,7 @@ namespace Program
             this.CelToKel.AutoSize = true;
             this.CelToKel.Location = new System.Drawing.Point(6, 43);
             this.CelToKel.Name = "CelToKel";
-            this.CelToKel.Size = new System.Drawing.Size(0, 13);
+            this.CelToKel.Size = new System.Drawing.Size(50, 13);
             this.CelToKel.TabIndex = 3;
             this.CelToKel.Text = "273.15 K";
             // 
@@ -90,7 +109,7 @@ namespace Program
             this.CeltoFah.AutoSize = true;
             this.CeltoFah.Location = new System.Drawing.Point(6, 30);
             this.CeltoFah.Name = "CeltoFah";
-            this.CeltoFah.Size = new System.Drawing.Size(0, 13);
+            this.CeltoFah.Size = new System.Drawing.Size(37, 13);
             this.CeltoFah.TabIndex = 2;
             this.CeltoFah.Text = "32.0 F";
             // 
@@ -130,7 +149,7 @@ namespace Program
             this.FahToKel.AutoSize = true;
             this.FahToKel.Location = new System.Drawing.Point(6, 43);
             this.FahToKel.Name = "FahToKel";
-            this.FahToKel.Size = new System.Drawing.Size(0, 13);
+            this.FahToKel.Size = new System.Drawing.Size(56, 13);
             this.FahToKel.TabIndex = 3;
             this.FahToKel.Text = "255.372 K";
             // 
@@ -139,7 +158,7 @@ namespace Program
             this.FahToCel.AutoSize = true;
             this.FahToCel.Location = new System.Drawing.Point(6, 30);
             this.FahToCel.Name = "FahToCel";
-            this.FahToCel.Size = new System.Drawing.Size(0, 13);
+            this.FahToCel.Size = new System.Drawing.Size(57, 13);
             this.FahToCel.TabIndex = 2;
             this.FahToCel.Text = "-17.778 °C";
             // 
@@ -179,7 +198,7 @@ namespace Program
             this.KelToFah.AutoSize = true;
             this.KelToFah.Location = new System.Drawing.Point(6, 43);
             this.KelToFah.Name = "KelToFah";
-            this.KelToFah.Size = new System.Drawing.Size(0, 13);
+            this.KelToFah.Size = new System.Drawing.Size(52, 13);
             this.KelToFah.TabIndex = 3;
             this.KelToFah.Text = "-479.67 F";
             // 
@@ -188,7 +207,7 @@ namespace Program
             this.KelToCel.AutoSize = true;
             this.KelToCel.Location = new System.Drawing.Point(6, 30);
             this.KelToCel.Name = "KelToCel";
-            this.KelToCel.Size = new System.Drawing.Size(0, 13);
+            this.KelToCel.Size = new System.Drawing.Size(57, 13);
             this.KelToCel.TabIndex = 2;
             this.KelToCel.Text = "-273.15 °C";
             // 
@@ -209,6 +228,16 @@ namespace Program
             this.KelInput.Size = new System.Drawing.Size(100, 20);
             this.KelInput.TabIndex = 1;
             this.KelInput.ValueChanged += new System.EventHandler(this.KelInput_ValueChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(272, 231);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -250,5 +279,6 @@ namespace Program
         private Label FahToKel;
         private Label KelToFah;
         private Label KelToCel;
+        private TabPage tabPage1;
     }
 }
