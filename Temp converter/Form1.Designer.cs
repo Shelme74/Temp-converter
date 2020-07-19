@@ -16,6 +16,7 @@
  */
 
 using System.Windows.Forms;
+using Resource;
 
 namespace Program
 {
@@ -93,7 +94,7 @@ namespace Program
             this.kelTab.Padding = new System.Windows.Forms.Padding(3);
             this.kelTab.Size = new System.Drawing.Size(272, 231);
             this.kelTab.TabIndex = 2;
-            this.kelTab.Text = "Kelvin";
+            this.kelTab.Text = Texts.kln;
             this.kelTab.UseVisualStyleBackColor = true;
             // 
             // KelToFah
@@ -142,7 +143,7 @@ namespace Program
             this.fahTab.Padding = new System.Windows.Forms.Padding(3);
             this.fahTab.Size = new System.Drawing.Size(272, 231);
             this.fahTab.TabIndex = 1;
-            this.fahTab.Text = "Fahrenheit";
+            this.fahTab.Text = Texts.fnt;
             this.fahTab.UseVisualStyleBackColor = true;
             // 
             // FahToKel
@@ -191,7 +192,7 @@ namespace Program
             this.celTab.Padding = new System.Windows.Forms.Padding(3);
             this.celTab.Size = new System.Drawing.Size(272, 231);
             this.celTab.TabIndex = 0;
-            this.celTab.Text = "Celcius";
+            this.celTab.Text = Texts.cls;
             this.celTab.UseVisualStyleBackColor = true;
             // 
             // CelToKel
@@ -249,18 +250,7 @@ namespace Program
             this.label1.Name = "AboutL1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Copyright(C) 2020  Shelme74\n" +
-                "This program is free software: you can redistribute it\n" +
-                "and / or modify it under the terms of the GNU Affero\n" +
-                "General Public License as published by the Free\n" +
-                "Software Foundation, either version 3 of the License,\n" +
-                "or(at your option) any later version.\n" +
-                "This program is distributed in the hope that it will be\nuseful, " +
-                "but WITHOUT ANY WARRANTY; without\neven the implied warranty of " +
-                "MERCHANTABILITY or\nFITNESS FOR A PARTICULAR PURPOSE. See the\n" +
-                "GNU Affero General Public License for more details.\n" +
-                "You should have received a copy of the GNU Affero\nGeneral Public License " +
-                "along with this program.\nIf not, see < https://www.gnu.org/licenses/ >.";
+            this.label1.Text = Texts.copyright;
             // 
             // Form1
             // 

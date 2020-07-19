@@ -1,19 +1,19 @@
 ﻿/**
- * Copyright(C) 2020  Shelme74
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or(at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
- * GNU Affero General Public License for more details.
- * 
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.If not, see<https://www.gnu.org/licenses/>.
- * 
- */
+* Copyright(C) 2020  Shelme74
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Affero General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or(at your option) any later version.
+* 
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+* GNU Affero General Public License for more details.
+* 
+* You should have received a copy of the GNU Affero General Public License
+* along with this program.If not, see<https://www.gnu.org/licenses/>.
+* 
+*/
 
 /* This file is used by Code Analysis to maintain SuppressMessage
  * attributes that are applied to this project.
@@ -21,9 +21,7 @@
  * a specific target and scoped to a namespace, type, member, etc.
  */
 
+
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "<Does not need to be corrected>", Scope = "member", Target = "~M:Program.Program.Main")]
-[assembly: SuppressMessage("Globalization", "CA1305:Specify IFormatProvider", Justification = "<Does not need to be corrected>", Scope = "member", Target = "~M:Program.Form1.CelInput_ValueChanged(System.Object,System.EventArgs)")]
-[assembly: SuppressMessage("Globalization", "CA1305:Specify IFormatProvider", Justification = "<Does not need to be corrected>", Scope = "member", Target = "~M:Program.Form1.FahInput_ValueChanged(System.Object,System.EventArgs)")]
-[assembly: SuppressMessage("Globalization", "CA1305:Specify IFormatProvider", Justification = "<Does not need to be corrected>", Scope = "member", Target = "~M:Program.Form1.KelInput_ValueChanged(System.Object,System.EventArgs)")]
+[assembly: SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "<Pending>", Scope = "member", Target = "~M:Program.Program.Main")]
