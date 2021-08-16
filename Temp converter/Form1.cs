@@ -39,14 +39,15 @@ namespace Program
         {
             try
             {
-                decimal cel = this.CelInput.Value;
+                Form1 form1 = this;
+                decimal cel = form1.CelInput.Value;
                 double celDbl = decimal.ToDouble(cel);
                 double fahDbl = Celcius.CelToFah(celDbl);
                 double kelDbl = Celcius.CelToKel(celDbl);
                 string fahSt = fahDbl.ToString("F1", CultureInfo.CurrentCulture);
                 string kelSt = kelDbl.ToString("F2", CultureInfo.CurrentCulture);
-                this.CeltoFah.Text = fahSt + " F";
-                this.CelToKel.Text = kelSt + " K";
+                form1.CeltoFah.Text = $"{fahSt} F";
+                form1.CelToKel.Text = $"{kelSt} K";
             }
             catch
             {
@@ -58,14 +59,15 @@ namespace Program
         {
             try
             {
-                decimal fah = this.FahInput.Value;
+                Form1 form1 = this;
+                decimal fah = form1.FahInput.Value;
                 double fahDbl = decimal.ToDouble(fah);
                 double celDbl = Fahrenheit.FahToCel(fahDbl);
                 double kelDbl = Fahrenheit.FahToKel(fahDbl);
                 string celSt = celDbl.ToString("F3", CultureInfo.CurrentCulture);
                 string kelSt = kelDbl.ToString("F3", CultureInfo.CurrentCulture);
-                this.FahToCel.Text = celSt + " °C";
-                this.FahToKel.Text = kelSt + " K";
+                form1.FahToCel.Text = $"{celSt} °C";
+                form1.FahToKel.Text = $"{kelSt} K";
             }
             catch
             {
@@ -77,14 +79,15 @@ namespace Program
         {
             try
             {
+                Form1 form1 = this;
                 decimal kel = this.KelInput.Value;
                 double kelDbl = decimal.ToDouble(kel);
                 double celDbl = Kelvin.KelToCel(kelDbl);
                 double fahDbl = Kelvin.KelToFah(kelDbl);
                 string celSt = celDbl.ToString("F2", CultureInfo.CurrentCulture);
                 string fahSt = fahDbl.ToString("F2", CultureInfo.CurrentCulture);
-                this.KelToCel.Text = celSt + " °C";
-                this.KelToFah.Text = fahSt + " F";
+                form1.KelToCel.Text = $"{celSt} °C";
+                form1.KelToFah.Text = $"{fahSt} F";
             }
             catch
             {
