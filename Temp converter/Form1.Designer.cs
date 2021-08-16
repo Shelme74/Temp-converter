@@ -178,7 +178,7 @@ namespace Program
             this.celTab.Padding = new System.Windows.Forms.Padding(3);
             this.celTab.Size = new System.Drawing.Size(272, 231);
             this.celTab.TabIndex = 0;
-            this.celTab.Text = "Celcius";
+            this.celTab.Text = "Celsius";
             this.celTab.UseVisualStyleBackColor = true;
             // 
             // CelToKel
