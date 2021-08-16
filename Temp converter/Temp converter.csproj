@@ -63,10 +63,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>ED3A7623CEAD171742BE717990A95A737BFFA114</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>072464D51D0C818E28283B8759430DF626E203F9</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
@@ -76,8 +76,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>ResourceKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>
@@ -161,6 +160,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <AdditionalFiles Include="stylecop.json" />
+    <None Include="ResourceKey.pfx" />
+    <None Include="Temp converter_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
