@@ -19,7 +19,7 @@ using System.Windows.Forms;
 
 namespace Program
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.

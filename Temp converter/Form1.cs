@@ -25,12 +25,12 @@ namespace Program
     /// <summary>
     /// Creates the Form1 class.
     /// </summary>
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Form1"/> class.
         /// </summary>
-        public Form1()
+        public MainWindow()
         {
             this.InitializeComponent();
         }
@@ -39,15 +39,15 @@ namespace Program
         {
             try
             {
-                Form1 form1 = this;
-                decimal cel = form1.CelInput.Value;
+                MainWindow mainwd = this;
+                decimal cel = mainwd.CelInput.Value;
                 double celDbl = decimal.ToDouble(cel);
                 double fahDbl = Celcius.CelToFah(celDbl);
                 double kelDbl = Celcius.CelToKel(celDbl);
                 string fahSt = fahDbl.ToString("F1", CultureInfo.CurrentCulture);
                 string kelSt = kelDbl.ToString("F2", CultureInfo.CurrentCulture);
-                form1.CeltoFah.Text = $"{fahSt} F";
-                form1.CelToKel.Text = $"{kelSt} K";
+                mainwd.CeltoFah.Text = $"{fahSt} F";
+                mainwd.CelToKel.Text = $"{kelSt} K";
             }
             catch
             {
@@ -59,15 +59,15 @@ namespace Program
         {
             try
             {
-                Form1 form1 = this;
-                decimal fah = form1.FahInput.Value;
+                MainWindow mainwd = this;
+                decimal fah = mainwd.FahInput.Value;
                 double fahDbl = decimal.ToDouble(fah);
                 double celDbl = Fahrenheit.FahToCel(fahDbl);
                 double kelDbl = Fahrenheit.FahToKel(fahDbl);
                 string celSt = celDbl.ToString("F3", CultureInfo.CurrentCulture);
                 string kelSt = kelDbl.ToString("F3", CultureInfo.CurrentCulture);
-                form1.FahToCel.Text = $"{celSt} °C";
-                form1.FahToKel.Text = $"{kelSt} K";
+                mainwd.FahToCel.Text = $"{celSt} °C";
+                mainwd.FahToKel.Text = $"{kelSt} K";
             }
             catch
             {
@@ -79,15 +79,15 @@ namespace Program
         {
             try
             {
-                Form1 form1 = this;
+                MainWindow mainwd = this;
                 decimal kel = this.KelInput.Value;
                 double kelDbl = decimal.ToDouble(kel);
                 double celDbl = Kelvin.KelToCel(kelDbl);
                 double fahDbl = Kelvin.KelToFah(kelDbl);
                 string celSt = celDbl.ToString("F2", CultureInfo.CurrentCulture);
                 string fahSt = fahDbl.ToString("F2", CultureInfo.CurrentCulture);
-                form1.KelToCel.Text = $"{celSt} °C";
-                form1.KelToFah.Text = $"{fahSt} F";
+                mainwd.KelToCel.Text = $"{celSt} °C";
+                mainwd.KelToFah.Text = $"{fahSt} F";
             }
             catch
             {
