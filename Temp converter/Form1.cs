@@ -15,13 +15,13 @@
  * 
  */
 
+using System;
+using System.Globalization;
+using System.Windows.Forms;
+using Resource;
+
 namespace Program
 {
-    using System;
-    using System.Globalization;
-    using System.Windows.Forms;
-    using Resource;
-
     /// <summary>
     /// Creates the Form1 class.
     /// </summary>
